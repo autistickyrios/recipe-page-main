@@ -1,0 +1,207 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* General Styling */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  color: hsl(30, 10%, 34%);
+  background-color: hsl(30, 54%, 90%);
+
+  font-size: 1.6rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  margin: 3rem 0;
+  border-radius: 2rem;
+  padding: 3.4rem;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 55%;
+}
+.recipe-img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.heading-primary {
+  color: hsl(24, 5%, 18%);
+  font-family: "Young serif", sans-serif;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.recipe-summary {
+  margin-bottom: 3rem;
+}
+
+.heading-secondary {
+  font-weight: 500;
+  font-family: "Young serif", sans-serif;
+  color: hsl(14, 45%, 36%);
+
+  margin-bottom: 1rem;
+}
+
+.heading-tertiary {
+  margin-bottom: 1rem;
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 1rem;
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+.preparation-list {
+  padding-left: 2.4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.preparation-list li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.list-highlight {
+  padding-left: 1.4rem;
+}
+
+.list-highlight span {
+  font-weight: 700;
+}
+
+.secondary-list li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.secondary-list {
+  display: grid;
+  gap: 1rem;
+  padding-left: 2.4rem;
+}
+
+.line {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin: 2.4rem 0;
+}
+
+.nutrition-list {
+  list-style: none;
+}
+
+.nutrition-table {
+  margin-bottom: 1.6rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.grid:last-child {
+  border: none;
+}
+
+.row2 {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.row1 {
+  margin-left: 3rem;
+}
+
+.row1,
+.row2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 45em) {
+  .container {
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 100%;
+  }
+  .recipe-img {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 2rem;
+  }
+
+  .mob-mod {
+    padding: 0 3rem;
+  }
+}
